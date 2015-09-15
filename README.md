@@ -2,8 +2,6 @@
 
 ###Distributed file archiving state machine for messy directories
 
-----
-
 Ensuring N servers all mirror the same ever changing file system is handled perfectly by rsync. When compression is required accross the mirrors and files are renamed and metadata changed, shit gets messy. There are probably a hundred better ways to deal with the problem but this works for me.
 
 - Subscribers communicate via Redis channels
